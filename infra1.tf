@@ -73,7 +73,7 @@ resource "aws_s3_bucket_object" "image-upload" {
   
   bucket = "${aws_s3_bucket.neel12345-bucket.bucket}"
   key    =  "img.jpeg"
-  source = "image.jpeg"
+  source = "*.jpeg"
   acl    = "public-read"
 }
 
@@ -226,6 +226,7 @@ resource "aws_ebs_snapshot" "ebs_snapshot" {
   
   tags = {
     env = "Production"
+    Name = "mySnap1"
   }
 
 
