@@ -214,10 +214,6 @@ resource "null_resource" "nullremote1"  {
 }
 
 
-
-
-
-
 #Snapshot
 
 resource "aws_ebs_snapshot" "ebs_snapshot" {
