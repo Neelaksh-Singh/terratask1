@@ -73,7 +73,7 @@ resource "aws_s3_bucket_object" "image-upload" {
   
   bucket = "${aws_s3_bucket.neel12345-bucket.bucket}"
   key    =  "img.jpeg"
-  source = "*.jpeg"
+  source = "image.jpeg"
   acl    = "public-read"
 }
 
